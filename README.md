@@ -57,4 +57,39 @@ ASF = 1.21
 ---
 
 ## Files in This Repo
+dementia-predictor/
+├── app.py # Main web app
+├── model.py # Neural net architecture
+├── predict_utils.py # Preprocessing and prediction utils
+├── model.pt # Trained model weights
+├── scaler.pkl # Scaler for input normalization
+├── requirements.txt # All required libraries
+├── Procfile # For Railway deployment
+├── README.md # Project documentation
+
+
+---
+
+## How to Run Locally
+
+```bash
+git clone https://github.com/yourusername/dementia-predictor.git
+cd dementia-predictor
+pip install -r requirements.txt
+python app.py
+
+Then open http://127.0.0.1:5000 in your browser.
+
+## Future Work
+Add REST API interface
+Collect feedback from predictions
+Add interpretability with SHAP
+Add logging to SQLite or Firebase
+
+Acknowledgments
+Dataset: Kaggle Dementia Prediction Dataset
+
+License
+MIT License.
+Model trained on anonymized public dataset.
 
